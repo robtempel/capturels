@@ -1,0 +1,312 @@
+@font-face {
+  font-family: "myriad";
+  src: url('../assets/fonts/myriadpro-bold.otf');
+}
+
+@font-face {
+  font-family: "avenirheavy";
+  src: url('../assets/fonts/Avenir Heavy.ttf');
+}
+
+@font-face {
+  font-family: "calc1";
+  src: url('../assets/fonts/calc/enhanced_led_board-7.ttf');
+}
+
+@font-face {
+  font-family: "calc2";
+  src: url('../assets/fonts/calc/led_board-7.ttf');
+}
+
+@font-face {
+  font-family: "electronic";
+  src: url('../assets/fonts/elec.ttf');
+}
+
+@font-face {
+  font-family: "electronic2";
+  src: url('../assets/fonts/DisplaySt.ttf');
+}
+
+@font-face {
+  font-family: "dots";
+  src: url('../assets/fonts/calc/fanfareticker.ttf');
+}
+
+@font-face {
+  font-family: "eledis2";
+  src: url('../assets/fonts/calc/Arcade.ttf');
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.542); 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(145, 145, 145); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(191, 191, 191); 
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'myriad';
+  overflow-x: hidden;
+  min-height: 500px;
+  height: auto;
+  margin: 0;
+  background-color: rgb(216, 216, 216);
+}
+
+.hora{
+    font-family: Courier;
+    font-size: 4ch;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(216, 216, 216);
+    width: auto;
+    height: 60px;
+}
+
+#contenedor {
+  top: 70px;
+  width: auto;
+  height: auto;
+  background-color: #e2e2e2;
+}
+
+.objeto{
+  position: absolute;
+  width: 430px;
+  height: 47px;
+  background-color: #cccccc;
+  border-radius: 4px;
+  padding: 2px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: black;
+  cursor: pointer;
+  user-select: none;
+}
+
+.objeto2{
+  position: absolute;
+  width: 430px;
+  height: 47px;
+  background-color: #49ce49;
+  border-radius: 4px;
+  padding: 2px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: black;
+  cursor: pointer;
+  user-select: none;
+}
+
+.objeto3{
+  position: absolute;
+  width: 430px;
+  height: 47px;
+  background-color: #ce4949;
+  border-radius: 4px;
+  padding: 2px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: black;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ch1{
+    position: relative;
+    width: auto;
+    height: 50px;
+    border-style: outset;
+    border-color: black;
+    border-width: 2px 0px 2px 0px;
+    background-color: rgb(185, 185, 185);
+}
+
+
+#mensajeOpciones {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: none;
+}
+
+#opciones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+
+
+#ventanadialogograbacion {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 6px;
+  width: 300px;
+  height: 400px;
+  background-color: #999999;
+  box-shadow: inset -2px -2px 4px 0px rgba(0, 0, 0, 0.897), inset 2px 2px 4px 0px rgb(255, 255, 255);
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+#jordania {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 6px;
+  width: 300px;
+  height: 400px;
+  background-color: #999999;
+  box-shadow: inset -2px -2px 4px 0px rgba(0, 0, 0, 0.897), inset 2px 2px 4px 0px rgb(255, 255, 255);
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: none;
+}
+
+.startrec{
+  width: 80%;
+  height: 20%;
+  background-color: #ce4949;
+  color: white;
+}
+
+.labelch{
+  position: relative;
+  top: 10px;
+}
+
+.channel{
+  position: relative;
+  top: 10px;
+  width: 50px;
+}
+
+.labelsource{
+  position: relative;
+  top: 20px;
+}
+
+.source{
+  position: relative;
+  top: 20px;
+}
+
+.cancel{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  height: 15%;
+  width: 45%;
+  background-color: cornflowerblue;
+}
+
+.update{
+  position: absolute;
+  height: 15%;
+  width: 45%;
+  bottom: 10px;
+  right: 10px;
+  background-color: cadetblue;
+}
+
+.startdate{
+  position: relative;
+  top: 20px;
+}
+
+.date{
+  position: relative;
+  top: 20px;
+}
+
+.labelname{
+  position: relative;
+  top: 30px;
+}
+
+.clipname{
+  position: relative;
+  top: 30px;
+}
+
+.startdate{
+  position: relative;
+  top: 40px;
+}
+
+.date{
+  position: relative;
+  top: 40px;
+}
+
+.labeltime{
+  position: relative;
+  top: 50px;
+}
+
+.time{
+  position: relative;
+  top: 50px;
+}
+
+.labeldur{
+  position: relative;
+  top: 60px;
+}
+
+.duration{
+  position: relative;
+  top: 60px;
+}
+
+#ventanadialogograbacion{
+  display: none;
+}
+
+.labelrecurrency{
+  position: relative;
+  top: 70px;
+}
+
+.repeat{
+  position: relative;
+  top: 70px;
+}
+
+.now{
+  position: absolute;
+  left: 640px;
+  width: 3px;
+  height: 100%;
+  background-color: red;
+
+}
